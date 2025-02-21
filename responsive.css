@@ -94,4 +94,8 @@
     .contact-info {
       padding-left: 35px;
     }
+
+    .contact-item {
+      color: #fff;
+    }
   }
