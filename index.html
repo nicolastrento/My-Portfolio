@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>PortFólio</title>
+</head>
+
+<body>
+  <div class="background">
+    <img src="assets/background-img2.jpg" alt="">
+  </div>
+  <div id="overlay" class="overlay"></div>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo-NTT01.png" alt="">
+    </div>
+
+    <nav class="navbar">
+      <ul>
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Home -->
+  <main class="cta animate" id="about">
+    <div class="my-name">
+      <h1> <span><i class='bx bx-code-alt'></i></span> Nicolas T. <span>FrontEnd Developer</span></h1>
+    </div>
+
+    <div class="button-cv">
+      <button>
+        <a href="">Read the CV</a>
+      </button>
+    </div>
+
+    <div class="icons">
+      <a href="https://github.com/nicolastrento"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/nicolas-trento/"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="#" id="whatsappLink"><i class='bx bxl-whatsapp'></i></a>
+    </div>
+
+    <div class="sobre-mim-container">
+      <button class="trigger-button pulse" onclick="toggleSobreMim()">
+        <i class='bx bx-user-circle' style="font-size: 1.8rem"></i>
+      </button>
+      <div class="sobre-mim" id="sobreMim">
+        <p>I'm a Front-End Developer passionate about creating incredible digital experiences! I transform ideas into
+          modern, responsive and visually impactful websites. Check out my skills and see how I can add value to your
+          projects!</p>
+      </div>
+    </div>
+
+    <div class="scroll-down"></div>
+  </main>
+
+  <section class="technologies-and-skills animate">
+    <div class="title-tech-and-skills">
+      <h2>Technologies And Skills</h2>
+    </div>
+    <div class="slider">
+      <div class="logos">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          alt="JavaScript">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+
+        <!-- Duplicando para efeito de rolagem infinita -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          alt="JavaScript">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+      </div>
+    </div>
+  </section>
+
+   <!-- Seção Projetos -->
+  <section class="projects animate"  id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project">
+        <img src="assets/img-site.png" alt="Projeto 1">
+        <a href="https://nicolastrento.github.io/projeto-jeri/" class="github-icon">
+          <i class='bx bx-git-branch'></i>
+        </a>
+        <div class="icon" onclick="toggleDescription(1)">+</div>
+        <p class="description" id="desc1">
+          This project was inspired by my trip to Jericoacoara, an extraordinary place that gave me unforgettable
+          moments. Developed with HTML, CSS and JavaScript, I used all my creativity and worked with the responsive
+          part, it was really cool.
+        </p>
+      </div>
+      <div class="project">
+        <img src="assets/img-portfolio-1.png" alt="Projeto 2">
+        <a href="https://nicolastrento.github.io/MyPortfolio/" class="github-icon">
+          <i class='bx bx-git-branch'></i>
+        </a>
+        <div class="icon" onclick="toggleDescription(2)">+</div>
+        <p class="description" id="desc2">
+          This portfolio was developed with HTML, CSS and JavaScript, with the aim of being very different and very
+          technological, I used all my creativity to do it, I really liked the result.
+        </p>
+      </div>
+      <div class="project">
+        <img src="assets/img-conversor-de-moedas.png" alt="Projeto 3">
+        <a href="https://nicolastrento.github.io/conversor-de-moedas/" class="github-icon">
+          <i class='bx bx-git-branch'></i>
+        </a>
+        <div class="icon" onclick="toggleDescription(3)">+</div>
+        <p class="description" id="desc3">
+          I used my creativity to make the interaction more intuitive and deepened my knowledge of JavaScript to ensure
+          full functionality for the project.
+        </p>
+      </div>
+      <div class="project">
+        <img src="assets/img-page-imoveis.png" alt="Projeto 4">
+        <a href="https://github.com/nicolastrento/page-im-veis" class="github-icon">
+          <i class='bx bx-git-branch'></i>
+        </a>
+        <div class="icon" onclick="toggleDescription(4)">+</div>
+        <p class="description" id="desc4">
+          With an intuitive design and simplified navigation, this project makes it easy to find the ideal property for
+          purchase, scheduling or investment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section class="contact-section animate" id="contact">
+    <div class="contact-info">
+      <h2 class="contact-title">Contact</h2>
+      <h3 class="contact-subtitle">Need a website?</h3>
+      <p class="contact-text">Get in touch and let's create together!</p>
+
+      <ul class="contact-items">
+        <li class="contact-item">
+          <i class='bx bxs-phone' ></i>
+          41 9 9656-9619
+        </li>
+        <li class="contact-item">
+          <i class='bx bxl-instagram-alt' ></i>
+          @ntrentoo
+        </li>
+        <li class="contact-item">
+          <i class='bx bxs-envelope' ></i>
+          ntrento.dev@hotmail.com
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post" data-form>
+      <input type="text" class="form-input" name="name" placeholder="Full Name" required>
+      <input type="email" class="form-input" name="email" placeholder="Email" required>
+      <input type="tel" class="form-input" name="telefone" placeholder="Phone" required>
+      <textarea class="form-textarea" name="mensagem" placeholder="Type Your Message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit" class="submit-button">Send</button data-button>
+      <input type="hidden" name="accessKey" value="b906ae43-a900-4bed-aa71-34871586026e">
+  </form>
+  
+  <div id="mensagemSucesso" style="display: none;">Formulário enviado com sucesso!</div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">
+          © 2025 All rights reserved
+        </p>
+        <div class="social-links">
+          <a href="https://github.com">GitHub</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="ntrento.dev@hotmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btn-topo" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

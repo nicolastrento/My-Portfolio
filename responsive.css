@@ -1,0 +1,97 @@
+@media (max-width: 768px) {
+  .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    gap: 20px; /* Reduzido o gap para telas menores */
+  }
+
+  .navbar ul {
+    gap: 10px; /* Reduzido o gap para telas menores */
+  }
+
+  .cta .my-name h1 {
+    font-size: 28px; /* Reduzido o tamanho da fonte */
+    padding-top: 100px; /* Ajustado o padding-top */
+  }
+
+  .technologies-and-skills .title-tech-and-skills {
+    font-size: 18px; /* Reduzido o tamanho da fonte */
+  }
+
+  .projects h2 {
+    font-size: 24px; /* Reduzido o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 60px; /* Reduzido o tamanho do logo */
+  }
+
+  .navbar li {
+    font-size: 12px; /* Reduzido o tamanho da fonte */
+  }
+
+  .cta .my-name h1 {
+    font-size: 24px; /* Reduzido o tamanho da fonte */
+    width: 270px;
+  }
+
+  /* Overlay cobrindo a tela, mas abaixo do sobre-mim */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 10; /* Overlay acima dos ícones */
+  }
+
+  .overlay.ativo {
+    display: block;
+  }
+
+  /* Posicionando o "Sobre Mim" acima do overlay */
+  .sobre-mim-container {
+    position: fixed;
+    top: -50px; /* Distância do topo */
+    right: -120px; /* Distância da direita */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 90%;
+    max-width: 300px;
+    z-index: 15; /* Acima do overlay e dos ícones */
+  }
+
+  .sobre-mim {
+    width: 100%;
+    background: rgba(68, 131, 126, 0.9);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #159ea386;
+  }
+  }
+
+  .technologies-and-skills .title-tech-and-skills {
+    font-size: 16px; /* Reduzido o tamanho da fonte */
+  }
+
+  .projects h2 {
+    font-size: 20px; /* Reduzido o tamanho da fonte */
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+
+    .contact-info {
+      padding-left: 35px;
+    }
+  }
