@@ -25,6 +25,14 @@
   .projects h2 {
     font-size: 24px; /* Reduzido o tamanho da fonte */
   }
+
+  .contact-item {
+    color: #fff;
+  }
+
+  .bx bxs-phone {
+    color: #fff;
+  }
 }
 
 @media (max-width: 480px) {
