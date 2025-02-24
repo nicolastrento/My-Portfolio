@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -14,14 +12,13 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <title>PortFólio</title>
 </head>
 
 <body>
-  <div class="background">
-    <img src="assets/background-img2.jpg" alt="">
-  </div>
-  <div id="overlay" class="overlay"></div>
+  <img class="background" src="assets/background-img.jpg" alt="">
   <header class="header">
     <div class="logo">
       <img src="assets/logo-NTT01.png" alt="">
@@ -39,14 +36,14 @@
   </header>
 
   <!-- Seção Home -->
-  <main class="cta animate" id="about">
+  <main class="cta animate">
     <div class="my-name">
       <h1> <span><i class='bx bx-code-alt'></i></span> Nicolas T. <span>FrontEnd Developer</span></h1>
     </div>
 
     <div class="button-cv">
       <button>
-        <a href="">Read the CV</a>
+        <a href="Nicolas Trento - Currículo.pdf" download>Read the CV</a>
       </button>
     </div>
 
@@ -55,24 +52,40 @@
       <a href="https://www.linkedin.com/in/nicolas-trento/"><i class='bx bxl-linkedin-square'></i></a>
       <a href="#" id="whatsappLink"><i class='bx bxl-whatsapp'></i></a>
     </div>
-
-    <div class="sobre-mim-container">
-      <button class="trigger-button pulse" onclick="toggleSobreMim()">
-        <i class='bx bx-user-circle' style="font-size: 1.8rem"></i>
-      </button>
-      <div class="sobre-mim" id="sobreMim">
-        <p>I'm a Front-End Developer passionate about creating incredible digital experiences! I transform ideas into
-          modern, responsive and visually impactful websites. Check out my skills and see how I can add value to your
-          projects!</p>
-      </div>
-    </div>
-
     <div class="scroll-down"></div>
   </main>
 
-  <section class="technologies-and-skills animate">
+  
+  <section class="sobre-mim" id="about">
+    <div class="title-sobre-mim">
+      <h2>About me</h2>
+    </div>
+
+    <div class="container-info  animate">
+      <div class="info-experiencia">
+        <i class='bx bx-calendar-star'></i>
+        <h4>Experience</h4>
+        <p>Check out projects</p>
+        <p>My personal developments!</p>
+      </div>
+  
+      <div class="info-educacao">
+        <i class='bx bxs-hard-hat'></i>
+        <h4>Education</h4>
+        <p>Dev Club - 2024</p>
+        <p>Full Stack</p>
+      </div>
+    </div>
+    
+    <div class="p-sobre-mim">
+      <p>Hello! I'm Nicolas, a Front-End Developer passionate about transforming ideas into modern, responsive and engaging interfaces. I am proficient in HTML, CSS and JavaScript, as well as experience with MongoDB for data management. Currently, I am deepening my knowledge in React and Node.js to create even more dynamic and efficient applications.
+      Whether it's an institutional website or an interactive application, I'm always looking for innovation and the best user experience.</p>
+    </div>
+  </section>
+
+  <section class="technologies-and-skills">
     <div class="title-tech-and-skills">
-      <h2>Technologies And Skills</h2>
+      <h2 class="animate">Skills</h2>
     </div>
     <div class="slider">
       <div class="logos">
@@ -99,8 +112,8 @@
   </section>
 
    <!-- Seção Projetos -->
-  <section class="projects animate"  id="projects">
-    <h2>Projects</h2>
+  <section class="projects"  id="projects">
+    <h2 class="title-projects animate">Projects</h2>
     <div class="project-container">
       <div class="project">
         <img src="assets/img-site.png" alt="Projeto 1">
@@ -109,9 +122,7 @@
         </a>
         <div class="icon" onclick="toggleDescription(1)">+</div>
         <p class="description" id="desc1">
-          This project was inspired by my trip to Jericoacoara, an extraordinary place that gave me unforgettable
-          moments. Developed with HTML, CSS and JavaScript, I used all my creativity and worked with the responsive
-          part, it was really cool.
+          Inspired by my trip to Jericoacoara, this project was developed with HTML, CSS and JavaScript.
         </p>
       </div>
       <div class="project">
@@ -181,6 +192,7 @@
       <input type="hidden" name="_captcha" value="false">
       <button type="submit" class="submit-button">Send</button data-button>
       <input type="hidden" name="accessKey" value="b906ae43-a900-4bed-aa71-34871586026e">
+      <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
   </form>
   
   <div id="mensagemSucesso" style="display: none;">Formulário enviado com sucesso!</div>

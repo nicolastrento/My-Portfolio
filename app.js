@@ -1,13 +1,3 @@
-// Função para o botão "Sobre Mim"
-function toggleSobreMim() {
-  const sobreMim = document.getElementById('sobreMim');
-  const button = document.querySelector('.trigger-button');
-
-  if (sobreMim && button) {
-    sobreMim.classList.toggle('aberto');
-    button.classList.toggle('active');
-  }
-}
 
 // Funções para as descrições dos projetos
 function toggleDescription(projectNumber) {
@@ -105,15 +95,3 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", verificaVisibilidade);
   verificaVisibilidade(); //  verifica a carga inicial
 });
-
-// Redireciona Whats
-
-// número do WhatsApp
-const phoneNumber = '554196569619';
-        
-//URL do WhatsApp
-const whatsappUrl = `https://wa.me/${phoneNumber}`;
-
-// Adiciona a URL ao link
-document.getElementById('whatsappLink').href = whatsappUrl;
-

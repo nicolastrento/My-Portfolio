@@ -5,109 +5,73 @@
     height: 100%;
   }
   
+  .logo img {
+    width: 60px;
+  }
+
   header {
     gap: 20px; /* Reduzido o gap para telas menores */
+  }
+
+  .navbar li {
+    font-size: 12px;
   }
 
   .navbar ul {
     gap: 10px; /* Reduzido o gap para telas menores */
   }
 
-  .cta .my-name h1 {
-    font-size: 28px; /* Reduzido o tamanho da fonte */
-    padding-top: 100px; /* Ajustado o padding-top */
-  }
-
-  .technologies-and-skills .title-tech-and-skills {
-    font-size: 18px; /* Reduzido o tamanho da fonte */
-  }
-
-  .projects h2 {
-    font-size: 24px; /* Reduzido o tamanho da fonte */
-  }
-
-  .contact-item {
-    color: #fff;
-  }
-
-  .bx bxs-phone {
-    color: #fff;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo img {
-    width: 60px; /* Reduzido o tamanho do logo */
-  }
-
-  .navbar li {
-    font-size: 12px; /* Reduzido o tamanho da fonte */
+  .cta {
+    margin-bottom: 200px;
   }
 
   .cta .my-name h1 {
-    font-size: 24px; /* Reduzido o tamanho da fonte */
+    font-size: 24px;
     width: 270px;
   }
 
-  /* Overlay cobrindo a tela, mas abaixo do sobre-mim */
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    backdrop-filter: blur(5px);
-    display: none;
-    z-index: 10; /* Overlay acima dos ícones */
+  .sobre-mim .title-sobre-mim {
+    font-size: 18px;
   }
 
-  .overlay.ativo {
-    display: block;
+  .sobre-mim .p-sobre-mim {
+    font-size: 12px;
+    width: 320px;
   }
 
-  /* Posicionando o "Sobre Mim" acima do overlay */
-  .sobre-mim-container {
-    position: fixed;
-    top: -50px; /* Distância do topo */
-    right: -120px; /* Distância da direita */
-    transform: translate(-50%, -50%);
-    margin: 0;
-    width: 90%;
-    max-width: 300px;
-    z-index: 15; /* Acima do overlay e dos ícones */
+  .container-info .info-experiencia {
+    width: 160px;
+    height: 120px;
   }
 
-  .sobre-mim {
-    width: 100%;
-    background: rgba(68, 131, 126, 0.9);
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 0 9px #159ea386;
-  }
+  .container-info .info-educacao {
+    width: 160px;
+    height: 120px;
   }
 
   .technologies-and-skills .title-tech-and-skills {
-    font-size: 16px; /* Reduzido o tamanho da fonte */
+    font-size: 18px;
   }
 
-  .projects h2 {
-    font-size: 20px; /* Reduzido o tamanho da fonte */
+  .projects .title-projects{
+    font-size: 24px;
   }
 
-  .contact-section {
+.contact-section {
     display: flex;
     flex-direction: column;
 
-    .contact-info {
-      padding-left: 35px;
-    }
+    .contact-title {
+        font-size: 28px;
+      }
+
 
     .contact-item {
-      color: #fff;
-    }
+        color: #fff;
+      }
 
     .bx bxs-phone {
-      color: #fff;
+        color: #fff;
     }
   }
+}
