@@ -60,18 +60,14 @@
 .contact-section {
     display: flex;
     flex-direction: column;
+    color: #fff;
+
+    .contact-items .contact-item {
+      color: #fff;
+    }
 
     .contact-title {
         font-size: 28px;
       }
-
-
-    .contact-item {
-        color: #fff;
-      }
-
-    .bx bxs-phone {
-        color: #fff;
-    }
   }
 }
