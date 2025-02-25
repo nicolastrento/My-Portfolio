@@ -12,6 +12,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <title>PortFólio</title>
@@ -36,18 +37,18 @@
   </header>
 
   <!-- Seção Home -->
-  <main class="cta animate">
+  <main class="cta">
     <div class="my-name">
-      <h1> <span><i class='bx bx-code-alt'></i></span> Nicolas T. <span>FrontEnd Developer</span></h1>
+      <h1 class="fade-in"> <span><i class='bx bx-code-alt'></i></span> Nicolas T. <span>FrontEnd Developer</span></h1>
     </div>
 
-    <div class="button-cv">
+    <div class="button-cv fade-in">
       <button>
         <a href="Nicolas Trento - Currículo.pdf" download>Read the CV</a>
       </button>
     </div>
 
-    <div class="icons">
+    <div class="icons fade-in">
       <a href="https://github.com/nicolastrento"><i class='bx bxl-github'></i></a>
       <a href="https://www.linkedin.com/in/nicolas-trento/"><i class='bx bxl-linkedin-square'></i></a>
       <a href="#" id="whatsappLink"><i class='bx bxl-whatsapp'></i></a>
@@ -55,20 +56,20 @@
     <div class="scroll-down"></div>
   </main>
 
-  
+
   <section class="sobre-mim" id="about">
     <div class="title-sobre-mim">
       <h2>About me</h2>
     </div>
 
-    <div class="container-info  animate">
+    <div class="container-info slide-in-left">
       <div class="info-experiencia">
         <i class='bx bx-calendar-star'></i>
         <h4>Experience</h4>
         <p>Check out projects</p>
         <p>My personal developments!</p>
       </div>
-  
+
       <div class="info-educacao">
         <i class='bx bxs-hard-hat'></i>
         <h4>Education</h4>
@@ -76,16 +77,20 @@
         <p>Full Stack</p>
       </div>
     </div>
-    
+
     <div class="p-sobre-mim">
-      <p>Hello! I'm Nicolas, a Front-End Developer passionate about transforming ideas into modern, responsive and engaging interfaces. I am proficient in HTML, CSS and JavaScript, as well as experience with MongoDB for data management. Currently, I am deepening my knowledge in React and Node.js to create even more dynamic and efficient applications.
-      Whether it's an institutional website or an interactive application, I'm always looking for innovation and the best user experience.</p>
+      <p>Hello! I'm Nicolas, a Front-End Developer passionate about transforming ideas into modern, responsive and
+        engaging interfaces. I am proficient in HTML, CSS and JavaScript, as well as experience with MongoDB for data
+        management. Currently, I am deepening my knowledge in React and Node.js to create even more dynamic and
+        efficient applications.
+        Whether it's an institutional website or an interactive application, I'm always looking for innovation and the
+        best user experience.</p>
     </div>
   </section>
 
   <section class="technologies-and-skills">
     <div class="title-tech-and-skills">
-      <h2 class="animate">Skills</h2>
+      <h2 class="slide-in-left">Skills</h2>
     </div>
     <div class="slider">
       <div class="logos">
@@ -111,91 +116,343 @@
     </div>
   </section>
 
-   <!-- Seção Projetos -->
-  <section class="projects"  id="projects">
-    <h2 class="title-projects animate">Projects</h2>
-    <div class="project-container">
-      <div class="project">
-        <img src="assets/img-site.png" alt="Projeto 1">
-        <a href="https://nicolastrento.github.io/projeto-jeri/" class="github-icon">
-          <i class='bx bx-git-branch'></i>
-        </a>
-        <div class="icon" onclick="toggleDescription(1)">+</div>
-        <p class="description" id="desc1">
-          Inspired by my trip to Jericoacoara, this project was developed with HTML, CSS and JavaScript.
-        </p>
+  <!-- Seção Projetos -->
+  <section class="container" id="projects">
+    <main>
+      <h2 class="slide-in-left">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/img-site.png" alt="E-commerce Platform">
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <h2>Landing Page Jeri</h2>
+              <div class="project-links">
+                <a href="https://github.com/nicolastrento/projeto-jeri" target="_blank" rel="noopener noreferrer"
+                  title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+                <a href="https://nicolastrento.github.io/projeto-jeri/" target="_blank" rel="noopener noreferrer"
+                  title="Ver projeto online">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <p>This project was inspired by my trip to Jericoacoara, an extraordinary place that gave me unforgettable
+              memories.</p>
+
+            <div class="technologies">
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                HTML
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                CSS
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/img-conversor-de-moedas.png" alt="Task Management App">
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <h2>Currency Converter</h2>
+              <div class="project-links">
+                <a href="https://github.com/nicolastrento/conversor-de-moedas" target="_blank" rel="noopener noreferrer"
+                  title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+                <a href="https://nicolastrento.github.io/conversor-de-moedas/" target="_blank" rel="noopener noreferrer"
+                  title="Ver projeto online">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <p>I developed a currency converter that transforms values ​​in Real into several other currencies. I sought
+              to make interaction more intuitive, exploring different design and usability approaches. Furthermore, I
+              deepened my knowledge of JavaScript to ensure full functionality for the project.</p>
+
+            <div class="technologies">
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                HTML
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                CSS
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/img-page-imoveis.png" alt="Task Management App">
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <h2>Real Estate Page</h2>
+              <div class="project-links">
+                <a href="https://github.com/nicolastrento/page-im-veis" target="_blank" rel="noopener noreferrer"
+                  title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+                <a href="https://nicolastrento.github.io/conversor-de-moedas/" target="_blank" rel="noopener noreferrer"
+                  title="Ver projeto online">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <p>With an intuitive design and simplified navigation, this project makes it easier to find the ideal
+              property for purchase, rent or investment.</p>
+
+            <div class="technologies">
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                HTML
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                CSS
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/img-portfolio-1.png" alt="Task Management App">
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <h2>Portfolio</h2>
+              <div class="project-links">
+                <a href="https://github.com/nicolastrento/conversor-de-moedas" target="_blank" rel="noopener noreferrer"
+                  title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+                <a href="https://nicolastrento.github.io/conversor-de-moedas/" target="_blank" rel="noopener noreferrer"
+                  title="Ver projeto online">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" x2="21" y1="14" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <p>I developed a currency converter that transforms values ​​in Real into several other currencies. I sought
+              to make interaction more intuitive, exploring different design and usability approaches. Furthermore, I
+              deepened my knowledge of JavaScript to ensure full functionality for the project.</p>
+
+            <div class="technologies">
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                HTML
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                CSS
+              </span>
+              <span class="tech-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="project">
-        <img src="assets/img-portfolio-1.png" alt="Projeto 2">
-        <a href="https://nicolastrento.github.io/MyPortfolio/" class="github-icon">
-          <i class='bx bx-git-branch'></i>
-        </a>
-        <div class="icon" onclick="toggleDescription(2)">+</div>
-        <p class="description" id="desc2">
-          This portfolio was developed with HTML, CSS and JavaScript, with the aim of being very different and very
-          technological, I used all my creativity to do it, I really liked the result.
-        </p>
-      </div>
-      <div class="project">
-        <img src="assets/img-conversor-de-moedas.png" alt="Projeto 3">
-        <a href="https://nicolastrento.github.io/conversor-de-moedas/" class="github-icon">
-          <i class='bx bx-git-branch'></i>
-        </a>
-        <div class="icon" onclick="toggleDescription(3)">+</div>
-        <p class="description" id="desc3">
-          I used my creativity to make the interaction more intuitive and deepened my knowledge of JavaScript to ensure
-          full functionality for the project.
-        </p>
-      </div>
-      <div class="project">
-        <img src="assets/img-page-imoveis.png" alt="Projeto 4">
-        <a href="https://github.com/nicolastrento/page-im-veis" class="github-icon">
-          <i class='bx bx-git-branch'></i>
-        </a>
-        <div class="icon" onclick="toggleDescription(4)">+</div>
-        <p class="description" id="desc4">
-          With an intuitive design and simplified navigation, this project makes it easy to find the ideal property for
-          purchase, scheduling or investment.
-        </p>
-      </div>
-    </div>
+    </main>
   </section>
 
   <!-- Seção Contato -->
-  <section class="contact-section animate" id="contact">
-    <div class="contact-info">
-      <h2 class="contact-title">Contact</h2>
-      <h3 class="contact-subtitle">Need a website?</h3>
-      <p class="contact-text">Get in touch and let's create together!</p>
+  <section class="container" id="contact">
+    <h1 class="title-contact slide-in-left">Contact</h1>
 
-      <ul class="contact-items">
-        <li class="contact-item">
-          <i class='bx bxs-phone' ></i>
-          41 9 9656-9619
-        </li>
-        <li class="contact-item">
-          <i class='bx bxl-instagram-alt' ></i>
-          @ntrentoo
-        </li>
-        <li class="contact-item">
-          <i class='bx bxs-envelope' ></i>
-          ntrento.dev@hotmail.com
-        </li>
-      </ul>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card">
+          <h2>Info Contact</h2>
+
+          <div class="info-links slide-in-left">
+            <a href="tel:+5541996569619" class="info-link">
+              <i data-lucide="phone"></i>
+              <span>(41) 99656-9619</span>
+            </a>
+
+            <a href="mailto:ntrento.dev@hotmail.com" class="info-link">
+              <i data-lucide="mail"></i>
+              <span>ntrento.dev@hotmail.com</span>
+            </a>
+
+            <a href="https://instagram.com/ntrentoo" target="_blank" rel="noopener noreferrer" class="info-link">
+              <i data-lucide="instagram"></i>
+              <span>@ntrentoo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container zoom-in">
+        <form id="contactForm" action="https://formspree.io/f/movjornd" method="POST">
+          <div class="form-group">
+            <label for="nome">Name:</label>
+            <input type="text" id="nome" name="nome" class="form-input">
+            <span class="error-message" data-error="nome"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input">
+            <span class="error-message" data-error="email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Phone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" class="form-input">
+            <span class="error-message" data-error="telefone"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Message:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" class="form-input"></textarea>
+            <span class="error-message" data-error="mensagem"></span>
+          </div>
+
+          <button type="submit" class="submit-button">
+            <i data-lucide="send"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
 
-    <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post" data-form>
-      <input type="text" class="form-input" name="name" placeholder="Full Name" required>
-      <input type="email" class="form-input" name="email" placeholder="Email" required>
-      <input type="tel" class="form-input" name="telefone" placeholder="Phone" required>
-      <textarea class="form-textarea" name="mensagem" placeholder="Type Your Message" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <button type="submit" class="submit-button">Send</button data-button>
-      <input type="hidden" name="accessKey" value="b906ae43-a900-4bed-aa71-34871586026e">
-      <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
-  </form>
-  
-  <div id="mensagemSucesso" style="display: none;">Formulário enviado com sucesso!</div>
+    <div id="successMessage" class="success-message hidden">
+      <i data-lucide="check-circle"></i>
+      Message sent successfully!
+    </div>
   </section>
 
   <!-- Rodapé -->
@@ -208,7 +465,7 @@
         <div class="social-links">
           <a href="https://github.com">GitHub</a>
           <a href="https://linkedin.com">LinkedIn</a>
-          <a href="ntrento.dev@hotmail.com">Email</a>
+          <a href="mailto:ntrento.dev@hotmail.com">Email</a>
         </div>
       </div>
     </div>
@@ -220,7 +477,7 @@
 
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 
 </html>

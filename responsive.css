@@ -30,8 +30,8 @@
     width: 270px;
   }
 
-  .sobre-mim .title-sobre-mim {
-    font-size: 18px;
+  .sobre-mim h2 {
+    font-size: 24px;
   }
 
   .sobre-mim .p-sobre-mim {
@@ -49,25 +49,27 @@
     height: 120px;
   }
 
-  .technologies-and-skills .title-tech-and-skills {
-    font-size: 18px;
-  }
-
-  .projects .title-projects{
+  .technologies-and-skills h2 {
     font-size: 24px;
   }
 
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+  .container {
+    max-width: 500px;
+  }
 
-    .contact-items .contact-item {
-      color: #fff;
-    }
+  .container h1 {
+    font-size: 24px;
+  }
 
-    .contact-title {
-        font-size: 28px;
-      }
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title-contact h1{
+    font-size: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
