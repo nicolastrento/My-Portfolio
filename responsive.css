@@ -21,9 +21,6 @@
     gap: 10px; /* Reduzido o gap para telas menores */
   }
 
-  .cta {
-    margin-bottom: 200px;
-  }
 
   .cta .my-name h1 {
     font-size: 24px;
@@ -57,12 +54,16 @@
     max-width: 500px;
   }
 
-  .container h1 {
-    font-size: 24px;
-  }
+
 
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-header h2 {
+    width: 200px;
+    font-size: 18px;
+    align-items: left;
   }
 
   .title-contact h1{
@@ -71,5 +72,9 @@
 
   .contact-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-info h2 {
+    font-size: 18px;
   }
 }
